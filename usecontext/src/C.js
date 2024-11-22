@@ -1,12 +1,12 @@
 import React from "react";
 import D from "./D";
 
-const C = (props) => {
+const C = () => {
   return (
     <div>
-      <h1>
-        <D greet={props.greet} />
-      </h1>
+
+        <D />
+
     </div>
   );
 };
