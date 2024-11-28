@@ -2,7 +2,6 @@ import React, { createContext } from "react";
 import B from "./B";
 
 const GreetContext = createContext();
-const Greet2Context = createContext();
 
 const A = () => {
   const greet = "Hello World!";
@@ -10,14 +9,12 @@ const A = () => {
 
   return (
     <div>
-      <GreetContext.Provider value={greet}>
-        <Greet2Context.Provider value={greet2}>
-          <B />
-        </Greet2Context.Provider>
+      <GreetContext.Provider value={{ greet, greet2 }}>
+        <B />
       </GreetContext.Provider>
     </div>
   );
 };
 
 export default A;
-export { GreetContext, Greet2Context };
+export { GreetContext };
