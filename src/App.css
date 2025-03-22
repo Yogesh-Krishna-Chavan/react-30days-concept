@@ -2,6 +2,12 @@
   background-color: rgb(185, 192, 194);
   border: 1px solid black;
   padding: 10px;
-  height: 300px;
-  width: 300px;
+  height: auto;
+  width: 400px;
+  text-align: center;
+}
+
+div{
+    padding: 20px;
+    margin: 20px;
 }
